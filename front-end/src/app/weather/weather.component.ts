@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 import {WeatherService} from '../shared/services/weather.service';
 import {WeatherResponse} from '../shared/models/weather.response';
 import {DailyForecast} from '../shared/models/daily.forecast';
@@ -8,7 +8,8 @@ import {b} from '@angular/core/src/render3';
 @Component({
   selector: 'app-weather',
   templateUrl: './weather.component.html',
-  styleUrls: ['./weather.component.css']
+  styleUrls: ['./weather.component.css'],
+  encapsulation: ViewEncapsulation.Native
 })
 export class WeatherComponent implements OnInit {
 
