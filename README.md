@@ -44,7 +44,7 @@ To run the front-end app without AEM, navigate to the front-end folder and run
 To build the front-end and insert it as a clientlib run,
     
     cd front-end
-    maven clean isntall
+    mvn clean isntall
 
 ## Testing
 
